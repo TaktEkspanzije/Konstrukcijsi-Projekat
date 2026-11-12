@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backstreet Wall</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <a class="logo" href="index.html">Backstreet Wall</a>
+
+    <nav class="header-nav">
+      <a class="button button-outline" href="account.html">
+        Log in / Registracija
+      </a>
+      <a class="button button-outline" href="profile.html">
+        Profil
+      </a>
+    </nav>
+  </header>
+
+
+  <!-- NAVIGACIJA -->
+  <nav class="main-nav" aria-label="Glavna navigacija">
+    <a href="index.html">Početna</a>
+    <a href="#o-stranici">O stranici</a>
+    <a href="#pravila">Pravila chata</a>
+  </nav>
+
+
+  <!-- GLAVNI RASPORED -->
+  <div class="content-layout">
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+      <section class="welcome-card" id="o-stranici">
+        <p class="eyebrow">Dobrodošli na</p>
+        <h1>Backstreet Wall</h1>
+
+        <p>
+          Jednostavan prostor za razgovor, upoznavanje
+          i izražavanje vlastitog stila.
+        </p>
+
+        <a class="button" href="account.html">
+          Prijavi se ili registriraj
+        </a>
+      </section>
+
+
+      <!-- PRVI ČLANAK -->
+      <article class="info-card">
+        <h2>O Backstreet Wallu</h2>
+
+        <p>
+          Backstreet Wall je mjesto za razgovor i druženje.
+          Svaki korisnik ima vlastiti profil i mogućnost
+          prilagodbe izgleda svojih poruka.
+        </p>
+      </article>
+
+
+      <!-- DRUGI ČLANAK -->
+      <article class="info-card" id="pravila">
+        <h2>Pravila glavnog chata</h2>
+
+        <p>
+          Poštuj druge korisnike. Zabranjeno je vrijeđanje,
+          uznemiravanje i spamanje.
+        </p>
+
+        <p>
+          Svaki korisnik odgovoran je za sadržaj
+          koji objavljuje.
+        </p>
+      </article>
+
+
+      <!-- TREĆI ČLANAK -->
+      <article class="info-card">
+        <h2>Privatni chatovi</h2>
+
+        <p>
+          Korisnici će moći stvarati vlastite privatne
+          chat sobe i zaštititi ih lozinkom.
+        </p>
+
+        <p>
+          U sobu će moći ući osobe koje imaju
+          odgovarajuću lozinku.
+        </p>
+      </article>
+
+    </main>
+
+
+    <!-- ASIDE: MAIN CHAT -->
+    <aside class="chat-sidebar">
+
+      <section class="chat-panel" aria-labelledby="chat-title">
+
+        <div class="chat-heading">
+          <h2 id="chat-title">Main chat</h2>
+          <span class="online-status">Glavna soba</span>
+        </div>
+
+
+        <!-- PORUKE -->
+        <div class="chat-messages" aria-live="polite">
+
+          <p class="empty-message">
+            Ovdje će se prikazivati poruke glavnog chata.
+          </p>
+
+          <div class="message">
+            <strong class="message-name">Korisnik</strong>
+            <p>Bok! Dobrodošli na Backstreet Wall.</p>
+          </div>
+
+          <div class="message">
+            <strong class="message-name">Gost</strong>
+            <p>Chat je zasad samo kostur stranice.</p>
+          </div>
+
+        </div>
+
+
+        <!-- UNOS PORUKE -->
+        <form class="chat-form" action="#" method="post">
+
+          <label class="visually-hidden" for="chat-message">
+            Napiši poruku
+          </label>
+
+          <textarea
+            id="chat-message"
+            name="message"
+            placeholder="Prijavi se za slanje poruka..."
+            rows="3"
+          ></textarea>
+
+          <button class="button" type="button">
+            Pošalji
+          </button>
+
+        </form>
+
+
+        <!-- PRIVATNI CHAT -->
+        <details class="private-room">
+
+          <summary>Napravi privatni chat</summary>
+
+          <form action="#" method="post">
+
+            <label for="room-name">Naziv chata</label>
+
+            <input
+              id="room-name"
+              name="room-name"
+              type="text"
+              placeholder="Naziv privatnog chata"
+            >
+
+            <label for="room-password">Lozinka za chat</label>
+
+            <input
+              id="room-password"
+              name="room-password"
+              type="password"
+              placeholder="Unesi lozinku"
+            >
+
+            <button class="button button-small" type="button">
+              Napravi chat
+            </button>
+
+          </form>
+
+        </details>
+
+      </section>
+
+    </aside>
+
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <p>
+      Kontakt:
+      <a href="mailto:jetamsrnka@gmail.com">
+        jetamsrnka@gmail.com
+      </a>
+    </p>
+
+    <p>
+      <a
+        href="https://www.youtube.com/@taktexp/featured"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        YouTube kanal
+      </a>
+    </p>
+
+  </footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil — Backstreet Wall</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page">
+
+    <header class="site-header">
+      <a class="logo" href="index.html">Backstreet Wall</a>
+      <a class="button button-outline" href="index.html">Natrag na početnu</a>
+    </header>
+
+    <main class="profile-layout">
+      <section class="form-card">
+        <h1>Postavke profila</h1>
+        <p>Ovaj obrazac je zasad samo vizualni kostur.</p>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+          <label for="profile-image">Profilna slika</label>
+          <input
+            id="profile-image"
+            name="profile-image"
+            type="file"
+            accept="image/*"
+          >
+
+          <label for="profile-name">Novo korisničko ime</label>
+          <input
+            id="profile-name"
+            name="profile-name"
+            type="text"
+            placeholder="Novo korisničko ime"
+          >
+
+          <label for="text-style">Stil teksta u chatu</label>
+          <select id="text-style" name="text-style">
+            <option value="arial">Classic — Arial</option>
+            <option value="courier">Typewriter — Courier</option>
+            <option value="impact">Punk — Impact</option>
+            <option value="georgia">Vintage — Georgia</option>
+            <option value="comic">Chaotic — Comic Sans</option>
+            <option value="monospace">Terminal — Monospace</option>
+        </select>
+
+          <label for="new-password">Nova lozinka</label>
+          <input
+            id="new-password"
+            name="new-password"
+            type="password"
+            autocomplete="new-password"
+            placeholder="Unesi novu lozinku"
+          >
+
+          <label for="confirm-password">Potvrdi novu lozinku</label>
+          <input
+            id="confirm-password"
+            name="confirm-password"
+            type="password"
+            autocomplete="new-password"
+            placeholder="Ponovi novu lozinku"
+          >
+
+          <button class="button" type="button">Spremi promjene</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Kontakt:
+        <a href="mailto:jetamsrnka@gmail.com">jetamsrnka@gmail.com</a>
+      </p>
+      <p>
+        <a
+          href="https://www.youtube.com/@taktexp/featured"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          YouTube kanal
+        </a>
+      </p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
