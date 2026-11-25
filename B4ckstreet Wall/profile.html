@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil — Backstreet Wall</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-page="profile">
+<div class="page">
+  <header class="site-header">
+    <a class="logo" href="index.html">Backstreet Wall</a>
+    <a class="button button-outline" href="index.html">Natrag na početnu</a>
+  </header>
+  <main class="profile-layout">
+    <section class="form-card">
+      <p class="eyebrow">Tvoj kutak</p>
+      <h1>Profil</h1>
+      <div class="profile-summary">
+        <div class="avatar" id="profile-avatar">?</div>
+        <div><h2 id="profile-display-name">Gost</h2><p id="profile-username">@guest</p></div>
+      </div>
+      <form id="profile-form">
+        <label for="profile-name">Ime za prikaz</label>
+        <input id="profile-name" name="accountName" type="text" maxlength="30" required>
+        <label for="text-style">Stil teksta u chatu</label>
+        <select id="text-style" name="textStyle">
+          <option value="Arial, Helvetica, sans-serif">Classic — Arial</option>
+          <option value="Courier New, monospace">Typewriter — Courier</option>
+          <option value="Impact, sans-serif">Punk — Impact</option>
+          <option value="Georgia, serif">Vintage — Georgia</option>
+          <option value="monospace">Terminal — Monospace</option>
+        </select>
+        <p class="form-message" id="profile-message" role="status"></p>
+        <button class="button" type="submit">Spremi promjene</button>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>Kontakt: <a href="mailto:jetamsrnka@gmail.com">jetamsrnka@gmail.com</a></p>
+    <p><a href="https://www.youtube.com/@taktexp/featured" target="_blank" rel="noopener noreferrer">YouTube kanal</a></p>
+  </footer>
+</div>
+</body>
+</html>

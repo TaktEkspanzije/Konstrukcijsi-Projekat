@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111111">
+  <title>Registracija — Backstreet Wall</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-page="register">
+<div class="page">
+  <header class="site-header">
+    <a class="logo" href="index.html">Backstreet Wall</a>
+    <a class="button button-outline" href="index.html">Natrag na početnu</a>
+  </header>
+
+  <main class="account-layout single-column">
+    <section class="form-card">
+      <p class="eyebrow">Pridruži se zajednici</p>
+      <h1>Registracija</h1>
+      <p>Napravi svoj račun i pridruži se razgovoru.</p>
+      <form id="register-form">
+        <label for="register-username">Korisničko ime</label>
+        <input id="register-username" name="username" type="text" autocomplete="username" minlength="3" maxlength="20" pattern="[A-Za-z0-9_]+" placeholder="3–20 znakova, slova i brojevi" required>
+        <small class="field-help">Korisničko ime može sadržavati slova, brojeve i donju crtu.</small>
+
+        <label for="register-account-name">Ime za prikaz</label>
+        <input id="register-account-name" name="accountName" type="text" maxlength="30" placeholder="Kako će te drugi vidjeti?" required>
+
+        <label for="register-password">Lozinka</label>
+        <input id="register-password" name="password" type="password" autocomplete="new-password" minlength="6" placeholder="Najmanje 6 znakova" required>
+
+        <label for="register-password-confirm">Ponovi lozinku</label>
+        <input id="register-password-confirm" name="passwordConfirm" type="password" autocomplete="new-password" minlength="6" placeholder="Ponovi lozinku" required>
+
+        <p class="form-message" id="register-message" role="status"></p>
+        <button class="button button-full" type="submit">Registriraj se</button>
+      </form>
+      <p class="form-switch">Već imaš račun? <a href="index.html" id="back-to-login">Vrati se na početnu i prijavi se</a>.</p>
+      <p class="tiny-note">Demo verzija: podaci se spremaju samo u ovaj preglednik. Nemoj koristiti stvarnu ili važnu lozinku.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Kontakt: <a href="mailto:jetamsrnka@gmail.com">jetamsrnka@gmail.com</a></p>
+    <p><a href="https://www.youtube.com/@taktexp/featured" target="_blank" rel="noopener noreferrer">YouTube kanal</a></p>
+  </footer>
+</div>
+</body>
+</html>
